@@ -1,0 +1,66 @@
+      .carousel{
+        width:200px;
+        height:200px;
+        position:relative;
+        overflow: hidden;
+      }
+      .carousel .carousel-imgbox{
+        position:relative;
+        z-index:-1
+      }
+      .carousel .carousel-imgbox img{
+        position:absolute;
+        width: 200px;
+        height: 200px;
+      }
+      .carousel .carousel-indicatorsbox{
+        position:absolute;
+        left:40px;
+        top:170px;
+      }
+      .carousel .carousel-indicatorsbox ul,li{
+          list-style: none;
+          margin: 0px;
+          padding: 0px;
+          zoom: 1;
+          overflow: hidden;
+      }
+      .carousel .carousel-indicatorsbox ul li{
+          float: left;
+          border: 1px solid rgb(0, 0, 0);
+          width: 13px;
+          height: 13px;
+          border-radius: 13px;
+          margin-left: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+      }
+      .carousel .carousel-indicatorsbox ul li:hover{
+          border: 1px solid rgb(42, 143, 143);
+          background-color: rgb(42, 143, 143);
+      }
+      .carousel .carousel-buttonbox{
+        zoom:1;
+        overflow:hidden;
+        position: relative;
+        top: 80px;
+      }
+      .carousel .carousel-buttonbox span{
+          float: left;
+          width: 0; 
+          height: 0; 
+          cursor: pointer;
+          border-top:10px solid transparent;
+          border-right: 20px solid transparent;
+          border-bottom: 10px solid transparent;
+
+      }
+      .carousel .carousel-buttonbox span:last-child{
+          border-right: none;
+          border-left: 20px solid transparent;
+          float:right;
+      }
+      .carousel .carousel-buttonbox span:hover{
+        transition: border-color 0.3s;
+       border-color: transparent rgb(58, 114, 179) transparent rgb(58, 114, 179);
+      }
